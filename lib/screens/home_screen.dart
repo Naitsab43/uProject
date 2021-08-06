@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-import 'package:notas_app/widgets/custom_floating_button.dart';
+import 'package:notas_app/widgets/custom_fab.dart';
+import 'package:notas_app/widgets/menu_drawer.dart';
 import 'package:notas_app/widgets/project_grid.dart';
 
 
@@ -15,7 +16,9 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color.fromRGBO(59, 74, 126, 1),
       ),
+      drawer: MenuDrawer(),
       body: ProjectGrid(),
+      backgroundColor: Color.fromRGBO(225, 225, 225, 1),
       floatingActionButton: CustomFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
    );

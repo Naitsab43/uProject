@@ -6,7 +6,7 @@ class CustomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: 0,
-      backgroundColor: Colors.deepPurple[400],
+      backgroundColor: Colors.red,
       iconSize: 26,
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.black45,
