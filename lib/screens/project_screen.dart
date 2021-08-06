@@ -124,20 +124,60 @@ class _TodoItemBody extends StatelessWidget {
 
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
-            Text(this.title, style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 24, fontWeight: FontWeight.bold), maxLines: 1,),
-            
+            Text(this.title, style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 25, fontWeight: FontWeight.bold), maxLines: 1,),
+
+            _LabelLists() ,
+
           ],
         ),
+
         Expanded(child: Container()),
+
         Transform.rotate(
           child: Icon(Icons.label_important, color: this.importancy["${this.selectedImportancy}"], size: 45,),
           angle: -180 * pi / 360,
         ),
+
         SizedBox(width: 10,)
 
       ],
+    );
+  }
+}
+
+class _LabelLists extends StatelessWidget {
+  const _LabelLists({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 280,
+      height: 25,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: 2,
+        itemBuilder: (BuildContext context, int i){
+
+          return Container(
+            alignment: Alignment.center,
+            margin: EdgeInsets.symmetric(horizontal: 5),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.red, width: 2),
+              borderRadius: BorderRadius.circular(5)
+            ),
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 5),
+              child: Text("Programación", style: TextStyle(color: Colors.red, fontSize: 14, fontWeight: FontWeight.bold)),
+            ),
+          );
+
+        },
+      ),
     );
   }
 }

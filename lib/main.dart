@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "home": (_) => HomeScreen(),
         "project": (_) => ProjectScreen(),
+
       },
     );
   }

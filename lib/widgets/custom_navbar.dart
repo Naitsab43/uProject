@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class CustomNavigationBar extends StatelessWidget {
 
   @override
@@ -14,14 +16,14 @@ class CustomNavigationBar extends StatelessWidget {
       showUnselectedLabels: false,
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.ac_unit),
+          icon: Icon(FontAwesomeIcons.sitemap),
           label: "",
-          activeIcon: Icon(Icons.ac_unit, size: 30,)
+          activeIcon: Icon(FontAwesomeIcons.sitemap, size: 25,)
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.note),
+          icon: Icon(FontAwesomeIcons.stickyNote),
           label: "",
-          activeIcon: Icon(Icons.note, size: 30,)
+          activeIcon: Icon(FontAwesomeIcons.stickyNote, size: 25,)
         ),
       ],
     );
