@@ -5,12 +5,14 @@ class PaperBackground extends StatelessWidget {
 
   final double height;
   final String text;
-  final Widget child;
+  final Widget info;
+  final bool hasTopBar;
 
   PaperBackground({
     required this.height,
-    required this.child,
-    required this.text
+    required this.info,
+    required this.text,
+    required this.hasTopBar
   });
 
 
@@ -25,7 +27,20 @@ class PaperBackground extends StatelessWidget {
         child: Column(
           children: [
               
-            _PaperInfo(child: this.child,),
+            hasTopBar ? 
+            Container(
+              width: double.infinity,
+              height: 12,
+              decoration: BoxDecoration(
+                color: Colors.purpleAccent,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
+              ),
+            ) 
+            : 
+            Container(),
+              
+
+            _PaperInfo(child: this.info,),
             Divider(color: Colors.black,),
             _PaperBody(text: this.text)
               

@@ -32,8 +32,9 @@ class TaskScreen extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 12),
         child: PaperBackground(
+          hasTopBar: false,
           height: 650,
-          child: _PaperBackgroundBody(),
+          info: _PaperBackgroundInfo(),
           text: "Deserunt Lorem deserunt esse nostrud pariatur consectetur ea duis Lorem commodo deserunt. Tempor aute commodo laborum amet nostrud ex nisi in cupidatat. Id eu reprehenderit eiusmod laborum esse eiusmod quis deserunt ut id excepteur incididunt. Reprehenderit duis veniam aute adipisicing reprehenderit anim cupidatat aliqua. Mollit officia voluptate ut deserunt adipisicing cillum consectetur do irure labore exercitation incididunt est deserunt. Et dolore in aute id adipisicing est eu magna ullamco voluptate tempor occaecat reprehenderit. Incididunt ullamco dolore veniam nostrud. Nisi nostrud sit cillum consectetur amet dolore anim pariatur pariatur exercitation officia ex. Labore magna enim ad esse aliqua ex irure id non in mollit ex. Sit sunt non sit proident nulla. Dolor mollit velit irure ipsum cillum pariatur ipsum incididunt voluptate reprehenderit in magna tempor voluptate. Mollit deserunt aliquip elit magna. Consequat incididunt in ipsum dolor consectetur aliqua dolore minim id enim proident. Labore enim nostrud minim laborum cillum minim minim ut enim.",
         )
       ),
@@ -44,7 +45,7 @@ class TaskScreen extends StatelessWidget {
   
 }
 
-class _PaperBackgroundBody extends StatelessWidget {
+class _PaperBackgroundInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
