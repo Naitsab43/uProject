@@ -43,21 +43,18 @@ class _ListOfTodo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      child: ListView.builder(
-        shrinkWrap: true,
-        itemCount: 3,
-        itemBuilder: (BuildContext context, int index) {
-          return _TodoItem(
-            title: "Nombre de la tarea",
-            selectedImportancy: "medium",
-          );
-        },
-      ),
-      onTap: () => {
-        Navigator.pushNamed(context, "task")
+
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: 3,
+      itemBuilder: (BuildContext context, int index) {
+        return _TodoItem(
+          title: "Nombre de la tarea",
+          selectedImportancy: "medium",
+        );
       },
     );
+    
   }
 }
 
@@ -78,11 +75,27 @@ class _TodoItem extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-      width: 100,
-      height: 80,
-      decoration: BoxDecoration(
+    return GestureDetector(
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+        width: 100,
+        height: 80,
+        decoration: _createDecoration(),
+        child: _TodoItemBody(
+          title: title, 
+          importancy: importancy, 
+          selectedImportancy: selectedImportancy
+        ),
+      ),
+      onTap: () => {
+        Navigator.pushNamed(context, "task")
+      },
+    );
+
+  }
+
+  BoxDecoration _createDecoration() {
+    return BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
@@ -92,14 +105,9 @@ class _TodoItem extends StatelessWidget {
             offset: Offset(0,5)
           )
         ]
-      ),
-      child: _TodoItemBody(
-        title: title, 
-        importancy: importancy, 
-        selectedImportancy: selectedImportancy
-      ),
-    );
+      );
   }
+  
 }
 
 class _TodoItemBody extends StatelessWidget {

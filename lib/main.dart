@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:notas_app/screens/home_screen.dart';
+import 'package:notas_app/screens/note_screen.dart';
 import 'package:notas_app/screens/notes_screen.dart';
 import 'package:notas_app/screens/project_screen.dart';
 import 'package:notas_app/screens/task_screen.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         "project": (_) => ProjectScreen(),
         "task": (_) => TaskScreen(),
         "notes": (_) => NotesScreen(),
+        "note": (_) => NoteScreen(),
       },
     );
   }
