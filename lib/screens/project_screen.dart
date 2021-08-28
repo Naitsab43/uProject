@@ -32,7 +32,7 @@ class ProjectScreen extends StatelessWidget {
           _ListOfTodo(),
         ],
       ),
-      bottomNavigationBar: CustomNavigationBar(),
+      bottomNavigationBar: CustomNavBar(),
       floatingActionButton: CustomFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

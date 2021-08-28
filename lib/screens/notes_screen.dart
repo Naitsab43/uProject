@@ -16,7 +16,7 @@ class NotesScreen extends StatelessWidget {
       ),
       body: _ListOfNotes(),
       backgroundColor: Color.fromRGBO(225, 225, 225, 1),
-      bottomNavigationBar: CustomNavigationBar(),
+      bottomNavigationBar: CustomNavBar(),
       floatingActionButton: CustomFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

@@ -39,7 +39,7 @@ class TaskScreen extends StatelessWidget {
         )
       ),
       backgroundColor: Color.fromRGBO(225, 225, 225, 1),
-      bottomNavigationBar: CustomNavigationBar(),
+      bottomNavigationBar: CustomNavBar(),
     );
   }
   
