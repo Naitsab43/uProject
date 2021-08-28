@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:notas_app/widgets/custom_navbar.dart';
-import 'package:notas_app/widgets/paper_background.dart';
+import 'package:notas_app/widgets/shared/custom_navbar.dart';
+import 'package:notas_app/widgets/shared/paper_background.dart';
 
 
 class NoteScreen extends StatelessWidget {

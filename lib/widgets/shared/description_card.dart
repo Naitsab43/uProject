@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notas_app/widgets/progress_bar.dart';
+import 'package:notas_app/widgets/shared/progress_bar.dart';
 
 
 class ProjectDescriptionCard extends StatelessWidget {

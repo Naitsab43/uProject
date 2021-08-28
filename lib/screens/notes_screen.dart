@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:notas_app/widgets/custom_fab.dart';
-import 'package:notas_app/widgets/custom_navbar.dart';
+import 'package:notas_app/widgets/shared/custom_fab.dart';
+import 'package:notas_app/widgets/shared/custom_navbar.dart';
 
 
 class NotesScreen extends StatelessWidget {

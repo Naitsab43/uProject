@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 
-import 'package:notas_app/widgets/custom_fab.dart';
-import 'package:notas_app/widgets/menu_drawer.dart';
-import 'package:notas_app/widgets/project_grid.dart';
+import 'package:notas_app/widgets/shared/custom_fab.dart';
+import 'package:notas_app/widgets/home/menu_drawer.dart';
+import 'package:notas_app/widgets/home/project_grid.dart';
 
 
 class HomeScreen extends StatelessWidget {

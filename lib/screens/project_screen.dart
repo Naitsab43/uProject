@@ -1,11 +1,11 @@
 import 'dart:math' show pi;
 import 'package:flutter/material.dart';
 
-import 'package:notas_app/widgets/custom_checkbox.dart';
-import 'package:notas_app/widgets/custom_fab.dart';
-import 'package:notas_app/widgets/custom_navbar.dart';
-import 'package:notas_app/widgets/description_card.dart';
-import 'package:notas_app/widgets/label_list.dart';
+import 'package:notas_app/widgets/shared/custom_checkbox.dart';
+import 'package:notas_app/widgets/shared/custom_fab.dart';
+import 'package:notas_app/widgets/shared/custom_navbar.dart';
+import 'package:notas_app/widgets/shared/description_card.dart';
+import 'package:notas_app/widgets/shared/label_list.dart';
 
 
 class ProjectScreen extends StatelessWidget {
