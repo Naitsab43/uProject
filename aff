@@ -1,0 +1,47 @@
+[33mcommit 4bd0d37fda3fa2b49e0b551d820104cad47fc74d[m[33m ([m[1;36mHEAD -> [m[1;32mwip[m[33m)[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 28 04:42:16 2021 -0400
+
+    Refactor: Refactor of Project Screen, the size of the widgets had overflow
+
+[33mcommit f64f9f7fcee7ca9a4cfc244d8d833f17e5e86024[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 28 03:46:01 2021 -0400
+
+    Add: I add a theme for the app
+
+[33mcommit fc0598d0aefd64e8a7fe3015c7ba3bfe7207270b[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 28 03:22:26 2021 -0400
+
+    Refactor: I changed the folder structur a bit  widgets/... to widgets/home widgets/shared
+
+[33mcommit d06595c8c8dada153a0c4369912f401b52a8b4bd[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 28 03:14:13 2021 -0400
+
+    Fix: a problem with the size of the screen, I will do changes en the future for responsive in all devices
+
+[33mcommit 0a15e73b8eec3b4c13a9cff9e7712bff7121b29a[m[33m ([m[1;31morigin/wip[m[33m)[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 21 04:06:56 2021 -0400
+
+    New: Add Note Screen, this contain the note info and the note body
+
+[33mcommit 0bfae4b496858679595135bb165f7014e148d42d[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 21 03:40:07 2021 -0400
+
+    Refactor: The background of TaskScreen  was refactored and now this is a new reusable component called PaperBackground
+
+[33mcommit 8a736c2b5187b2260b3be1fe6290c79451d6c7d0[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 21 03:01:27 2021 -0400
+
+    New: Readme was updated (Not complete)
+
+[33mcommit b6e0cec6737dd494cdb716b112b5a804c9e693f5[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Naitsab43 <bastianhuenuqueo43@gmail.com>
+Date:   Sat Aug 21 02:02:19 2021 -0400
+
+    Add: Task Screen, Notes Screen

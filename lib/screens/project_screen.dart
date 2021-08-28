@@ -76,7 +76,7 @@ class _TodoItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
       width: 100,
       height: 70,
       decoration: _createDecoration(),

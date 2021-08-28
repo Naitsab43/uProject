@@ -17,7 +17,7 @@ class NotesScreen extends StatelessWidget {
       body: _ListOfNotes(),
       backgroundColor: Color.fromRGBO(225, 225, 225, 1),
       bottomNavigationBar: CustomNavigationBar(),
-      floatingActionButton: CustomFloatingButton(color: Colors.red[900]),
+      floatingActionButton: CustomFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
@@ -45,15 +45,15 @@ class _NotesItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
         width: 100,
-        height: 80,
+        height: 70,
         decoration: _createDecoration(),
         child: Row(
           children: [
 
             Container(
-              width: 12,
+              width: 10,
               height: 80,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
@@ -63,7 +63,7 @@ class _NotesItem extends StatelessWidget {
 
             SizedBox(width: 12,),
 
-            Text("Titulo de la nota", style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 25, fontWeight: FontWeight.bold), maxLines: 1,),
+            Text("Titulo de la nota", style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 22, fontWeight: FontWeight.bold), maxLines: 1,),
 
             Expanded(child: Container()),
 

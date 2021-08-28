@@ -19,11 +19,11 @@ class TaskScreen extends StatelessWidget {
         actions: [
 
           IconButton(
-            icon: Icon(Icons.new_label, size: 30,),
+            icon: Icon(Icons.new_label, size: 24,),
             onPressed: (){},
           ),
           IconButton(
-            icon: Icon(FontAwesomeIcons.edit),
+            icon: Icon(FontAwesomeIcons.edit, size: 20,),
             onPressed: (){},
           ),
 
@@ -68,9 +68,9 @@ class _PaperBackgroundInfo extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
 
-            Text("Titulo de la tarea", style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 25, fontWeight: FontWeight.bold), maxLines: 1,),
+            Text("Titulo de la tarea", style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 22, fontWeight: FontWeight.bold), maxLines: 1,),
 
-            LabelList(width: 250,),
+            LabelList(width: 200,),
 
           ],
 
@@ -79,9 +79,9 @@ class _PaperBackgroundInfo extends StatelessWidget {
         Column(
           children: [
 
-            Text("Jul 21, 2021"),
+            Text("Jul 21, 2021", style: TextStyle(fontSize: 12),),
             Transform.rotate(
-              child: Icon(Icons.label_important, color: Colors.orange, size: 50,),
+              child: Icon(Icons.label_important, color: Colors.orange, size: 35,),
               angle: -180 * pi / 360,
             ),
 

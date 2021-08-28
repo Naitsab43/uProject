@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'uProject',
-      initialRoute: "home",
+      initialRoute: "project",
       routes: {
         "home": (_) => HomeScreen(),
         "project": (_) => ProjectScreen(),

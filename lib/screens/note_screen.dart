@@ -15,7 +15,7 @@ class NoteScreen extends StatelessWidget {
         actions: [
 
           IconButton(
-            icon: Icon(FontAwesomeIcons.edit),
+            icon: Icon(FontAwesomeIcons.edit, size: 20,),
             onPressed: (){},
           ),
 
