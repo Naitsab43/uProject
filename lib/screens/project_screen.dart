@@ -75,21 +75,16 @@ class _TodoItem extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-        width: 100,
-        height: 80,
-        decoration: _createDecoration(),
-        child: _TodoItemBody(
-          title: title, 
-          importancy: importancy, 
-          selectedImportancy: selectedImportancy
-        ),
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      width: 100,
+      height: 70,
+      decoration: _createDecoration(),
+      child: _TodoItemBody(
+        title: title, 
+        importancy: importancy, 
+        selectedImportancy: selectedImportancy
       ),
-      onTap: () => {
-        Navigator.pushNamed(context, "task")
-      },
     );
 
   }
@@ -121,6 +116,7 @@ class _TodoItemBody extends StatelessWidget {
   final String title;
   final Map<String, Color> importancy;
   final String selectedImportancy;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -131,33 +127,42 @@ class _TodoItemBody extends StatelessWidget {
 
         CustomCheckBox(
           value: true,
-          width: 30,
-          height: 30,
+          width: 25,
+          height: 25,
           onSelect: (value) => null
         ),
 
         SizedBox(width: 15,),
 
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-
-            Text(this.title, style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 25, fontWeight: FontWeight.bold), maxLines: 1,),
-
-            LabelList(width: 280,),
-
-          ],
+        GestureDetector(
+          child: Row(
+            children: [
+        
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+        
+                  Text(this.title, style: TextStyle(color: Color.fromRGBO(101, 101, 101, 1),fontSize: 22, fontWeight: FontWeight.bold), maxLines: 1,),
+        
+                  LabelList(width: 230,),
+        
+                ],
+              ),
+        
+              Transform.rotate(
+                child: Icon(Icons.label_important, color: this.importancy["${this.selectedImportancy}"], size: 40,),
+                angle: -180 * pi / 360,
+              ),
+        
+              SizedBox(width: 10,)
+        
+            ],
+          ),
+          onTap: () => {
+            Navigator.pushNamed(context, "task")
+          },
         ),
-
-        Expanded(child: Container()),
-
-        Transform.rotate(
-          child: Icon(Icons.label_important, color: this.importancy["${this.selectedImportancy}"], size: 45,),
-          angle: -180 * pi / 360,
-        ),
-
-        SizedBox(width: 10,)
 
       ],
     );

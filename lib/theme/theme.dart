@@ -6,8 +6,8 @@ class CustomTheme {
   static ThemeData get theme {
 
     return ThemeData(
-      primaryColor: Colors.blue[600],
-      floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.blue[800])
+      primaryColor: Colors.purple[600],
+      floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.purple[800])
     );
 
   } 

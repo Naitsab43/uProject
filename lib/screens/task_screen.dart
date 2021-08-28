@@ -56,8 +56,8 @@ class _PaperBackgroundInfo extends StatelessWidget {
 
         CustomCheckBox(
           value: false,
-          width: 30,
-          height: 30,
+          width: 25,
+          height: 25,
           onSelect: (value) => null
         ),
 

@@ -48,8 +48,9 @@ class ProgressBarPreview extends StatelessWidget {
 class ProgressBar extends StatelessWidget {
 
   final double height;
+  final double width;
 
-  ProgressBar({required this.height}); 
+  ProgressBar({required this.height, required this.width}); 
 
   @override
   Widget build(BuildContext context) {
@@ -67,17 +68,17 @@ class ProgressBar extends StatelessWidget {
                 color: Color.fromRGBO(221, 221, 221, 1),
               ),
               height: this.height,
-              width: 320,
+              width: this.width,
             ),
 
             Container(
               margin: EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50), topLeft: Radius.circular(50)),
                 color: Theme.of(context).primaryColor,
               ),
               height: this.height,
-              width: 320 * 0.5,
+              width: this.width * 0.5,
             ),
 
 

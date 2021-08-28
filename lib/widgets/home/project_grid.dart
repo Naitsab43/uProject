@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notas_app/widgets/shared/progress_bar.dart';
+import 'package:notas_app/widgets/shared/select_date.dart';
 
 class ProjectGrid extends StatelessWidget {
 
@@ -79,19 +80,7 @@ class _CardContent extends StatelessWidget {
               height: 50,
             ),
 
-            Container(
-              width: double.infinity,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-
-                  _SelectDate(),
-                  Icon(Icons.arrow_forward, color: Color.fromRGBO(101, 101, 101, 1)),
-                  _SelectDate(),
-
-                ],
-              ),
-            ),
+            SelectDate(width: 60, height: 30,),
             
             SizedBox(height: 10,),
 
@@ -119,22 +108,5 @@ class _CardContent extends StatelessWidget {
   }
 
 
-}
-
-class _SelectDate extends StatelessWidget {
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Color.fromRGBO(198, 198, 198, 1),
-        borderRadius: BorderRadius.circular(5),
-        border: Border.all(color: Color.fromRGBO(141, 141, 141, 1))
-      ),
-      margin: EdgeInsets.symmetric(horizontal: 3),
-      height: 30,
-      width: 60,
-    );
-  }
 }
 

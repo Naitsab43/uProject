@@ -62,7 +62,7 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
 
       decoration: BoxDecoration(
         color: widget.backgroudColor ?? Colors.transparent,
-        borderRadius: widget.borderRadius ?? BorderRadius.circular(7),
+        borderRadius: widget.borderRadius ?? BorderRadius.circular(50),
         border: Border.all(width: 1, color: Colors.grey)
       ),
       width: widget.width,
@@ -73,7 +73,7 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
           child: Container(
             decoration: BoxDecoration(
               color: _selectedColor,
-              borderRadius: BorderRadius.circular(3),
+              borderRadius: BorderRadius.circular(50),
             ),
           ),
           onTap: (){
