@@ -36,7 +36,7 @@ class _ProjectCard extends StatelessWidget {
           /// Barra de arriba
           Container(
             decoration: BoxDecoration(
-              color: Colors.red,
+              color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
             ),
             width: double.infinity,

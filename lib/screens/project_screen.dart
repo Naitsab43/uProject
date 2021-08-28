@@ -23,7 +23,7 @@ class ProjectScreen extends StatelessWidget {
           )
           
         ],
-        backgroundColor: Colors.red
+        backgroundColor: Theme.of(context).primaryColor
       ),
       backgroundColor: Color.fromRGBO(225, 225, 225, 1),
       body: Column(
@@ -33,7 +33,7 @@ class ProjectScreen extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: CustomNavigationBar(),
-      floatingActionButton: CustomFloatingButton(color: Colors.red[800]),
+      floatingActionButton: CustomFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

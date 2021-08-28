@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       drawer: MenuDrawer(),
       body: ProjectGrid(),
       backgroundColor: Color.fromRGBO(225, 225, 225, 1),
-      floatingActionButton: CustomFloatingButton(),
+      floatingActionButton: CustomFloatingButton(color: Color.fromRGBO(59, 74, 126, 1),),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
    );
   }

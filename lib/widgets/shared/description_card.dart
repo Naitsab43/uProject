@@ -64,7 +64,7 @@ class _RemainingDays extends StatelessWidget {
           width: 110,
           child: Icon(Icons.access_alarm, color: Colors.white, size: 50,),
           decoration: BoxDecoration(
-            color: Colors.red,
+            color: Theme.of(context).primaryColor,
             borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
           ),
         ),

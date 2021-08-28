@@ -5,6 +5,7 @@ import 'package:notas_app/screens/note_screen.dart';
 import 'package:notas_app/screens/notes_screen.dart';
 import 'package:notas_app/screens/project_screen.dart';
 import 'package:notas_app/screens/task_screen.dart';
+import 'package:notas_app/theme/theme.dart';
  
 void main() => runApp(MyApp());
  
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         "notes": (_) => NotesScreen(),
         "note": (_) => NoteScreen(),
       },
+      theme: CustomTheme.theme,
     );
   }
 }

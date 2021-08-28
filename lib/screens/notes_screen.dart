@@ -11,7 +11,7 @@ class NotesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Notas del proyecto"),
-        backgroundColor: Colors.red,
+        backgroundColor: Theme.of(context).primaryColor,
         actions: [],
       ),
       body: _ListOfNotes(),

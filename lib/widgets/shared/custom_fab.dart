@@ -16,7 +16,7 @@ class CustomFloatingButton extends StatelessWidget {
         child: FloatingActionButton(
           elevation: 5,
           child: Icon(Icons.add, size: 30,),
-          backgroundColor: this.color ?? Color.fromRGBO(59, 74, 126, 1),
+          backgroundColor: this.color,
           onPressed: (){},
         ),
       ),

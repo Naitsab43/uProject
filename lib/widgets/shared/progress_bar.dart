@@ -27,7 +27,7 @@ class ProgressBarPreview extends StatelessWidget {
           margin: EdgeInsets.symmetric(horizontal: 5),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50),
-            color: Colors.red,
+            color: Theme.of(context).primaryColor,
           ),
           height: this.height,
           width: 200 * 0.5,
@@ -74,7 +74,7 @@ class ProgressBar extends StatelessWidget {
               margin: EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                color: Colors.red,
+                color: Theme.of(context).primaryColor,
               ),
               height: this.height,
               width: 320 * 0.5,

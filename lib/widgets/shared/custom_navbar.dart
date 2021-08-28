@@ -12,7 +12,7 @@ class CustomNavigationBar extends StatelessWidget {
         TabItem(icon: FontAwesomeIcons.stickyNote, title: 'Notas'),
       ],
       curveSize: 95,
-      backgroundColor: Colors.red,
+      backgroundColor: Theme.of(context).primaryColor,
       height: 60,
       top: -20,
     );
