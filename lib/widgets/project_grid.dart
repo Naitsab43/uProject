@@ -6,14 +6,14 @@ class ProjectGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(6),
+      padding: EdgeInsets.all(5),
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 12,
-          mainAxisSpacing: 18
+          mainAxisSpacing: 18,
         ),
-        itemCount: 8,
+        itemCount: 2,
         itemBuilder: (BuildContext context, int i){
           return _ProjectCard();
         },
@@ -53,14 +53,14 @@ class _ProjectCard extends StatelessWidget {
 
 class _CardContent extends StatelessWidget {
 
-  final titleStyle = TextStyle(color: Color.fromRGBO(101, 101, 101, 1), fontWeight: FontWeight.bold, fontSize: 20);
+  final titleStyle = TextStyle(color: Color.fromRGBO(101, 101, 101, 1), fontWeight: FontWeight.bold, fontSize: 18);
 
   @override
   Widget build(BuildContext context) {
 
     return Positioned(
       child: Container(
-        margin: EdgeInsets.only(top: 15),
+        margin: EdgeInsets.only(top: 13),
         decoration: _createBoxDecoration(),
         width: double.infinity,
         child: Column(
@@ -76,20 +76,23 @@ class _CardContent extends StatelessWidget {
               ),
               margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
               width: double.infinity,
-              height: 70,
+              height: 50,
             ),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+            Container(
+              width: double.infinity,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
 
-                Icon(Icons.calendar_today_rounded, color: Color.fromRGBO(101, 101, 101, 1)),
-                _SelectDate(),
-                Icon(Icons.arrow_forward, color: Color.fromRGBO(101, 101, 101, 1)),
-                _SelectDate(),
+                  _SelectDate(),
+                  Icon(Icons.arrow_forward, color: Color.fromRGBO(101, 101, 101, 1)),
+                  _SelectDate(),
 
-              ],
+                ],
+              ),
             ),
+            
             SizedBox(height: 10,),
 
             ProgressBarPreview(height: 25,)
